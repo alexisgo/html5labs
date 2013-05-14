@@ -1,0 +1,58 @@
+h1 {
+  background-color: yellow;
+  
+  border-top-left-radius: 20px 5px;
+  border-bottom-right-radius: 10px 50px;
+  
+  box-shadow: inset 2px 3px 3px rgba(0,0,0,0.4);
+  transform-origin: 0% 100%;
+  transform: rotateZ(5deg);
+  
+  /*set up the transition so that all changes
+  to animatable properties happen over 2 secs*/
+  transition: background-color 2s, transform 1s;
+}
+
+h1:hover {
+    /*when we hover over the h1, rotate it 
+    45 degree*/
+  transform: rotate(45deg); 
+  background-color: pink;
+}
+
+.test1 {
+    background: linear-gradient(to bottom, rgba(225,255,255,1) 0%,rgba(225,255,255,1) 7%,rgba(225,255,255,1) 12%,rgba(253,255,255,1) 12%,rgba(230,248,253,1) 30%,rgba(200,238,251,1) 54%,rgba(190,228,248,1) 75%,rgba(177,216,245,1) 100%); /* W3C */
+    box-shadow: 2px 3px 3px black; 
+    
+    transform-origin: 0% 0%;
+    transition: all 3s cubic-bezier(.06,.9,.22,1.59);
+    
+}
+
+.test1:hover {
+    transform: scale(1, 2) rotate(15deg) translateX(40px);
+}
+
+.test2 {
+    background-color:orange;
+    color: white;
+    text-shadow: 4px 4px 3px blue;
+}
+
+.test3 {
+    transform: translateX(100px) translateY(50px);
+}
+
+
+input {
+    width:80px;
+    transition: width 1s;
+}
+
+input:focus {
+    width:140px; 
+}
+
+
+
+
